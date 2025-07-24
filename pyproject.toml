@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "beautifulsoup4>=4.13.4",
     "google-api-python-client>=2.176.0",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.3",

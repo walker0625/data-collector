@@ -12,7 +12,7 @@ import urllib.request
 load_dotenv()
 
 api_key = os.getenv('YOUTUBE_API_KEY')
-video_id = "wwISa7155Ug"
+video_id = "hNedR1LCkrw"
 
 youtube = build("youtube", "v3", developerKey=api_key)
 
@@ -23,7 +23,7 @@ while True:
     response = youtube.commentThreads().list(
         part="snippet",
         videoId=video_id,
-        maxResults=100,
+        maxResults=1,
         pageToken=next_page_token,
         textFormat="plainText"
     ).execute()
