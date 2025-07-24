@@ -20,6 +20,7 @@ def youtube_search_list_for_video_id_list(search_keyword):
     next_page_token = None 
 
     while True:
+        # 1번 call에 100크레딧(일일 10000개 기본)
         search_response = youtube.search().list(
             q= search_keyword,
             part = 'snippet',

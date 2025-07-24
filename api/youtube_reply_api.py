@@ -16,6 +16,7 @@ load_dotenv()
 api_key = os.getenv('YOUTUBE_API_KEY')
 
 def youtube_gather_reply_list(video_id_list):
+    
     youtube = build("youtube", "v3", developerKey=api_key)
 
     comments = []
@@ -24,6 +25,7 @@ def youtube_gather_reply_list(video_id_list):
     for video_id in video_id_list:
         
         while True:
+            # 1번 call에 1크레딧(일일 10000개 기본)
             response = youtube.commentThreads().list(
                 part="snippet",
                 videoId=video_id,
