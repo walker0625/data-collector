@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "beautifulsoup4>=4.13.4",
     "google-api-python-client>=2.176.0",
+    "google-play-scraper>=1.2.7",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.3",
     "openai>=1.97.1",
@@ -14,4 +15,5 @@ dependencies = [
     "python-dotenv>=1.1.1",
     "pytrends>=4.9.2",
     "requests>=2.32.4",
+    "selenium>=4.34.2",
 ]
